@@ -1,0 +1,68 @@
+###Get a list of all events
+GET http://f19e-2605-a200-9502-fa57-444c-c01e-774c-6560.ngrok.io/events?status=Approved
+
+### Create a event
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+ "name": "1Love Soca Jamical (Cooler Festival)",
+ "price": 2,
+ //"image": require('../assets/products/event3.png'),
+ "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to or a typeface without relying on meaningful content. before the final copy is available text commonly used to or a typeface without relying on meaningful content. before the final copy is available.",
+ "date": "Sunday May 1, 2022",
+ "time": "7:00pm",
+ "location":"Catherine Hall, Entertainment Centre Montego Bay, Jamaica"
+}
+
+### GET a event by id
+GET http://localhost:3000/events/627ddb9f85b21e42268729c7
+
+### Update a event by id
+PATCH  http://localhost:3000/events/627ddb9f85b21e42268729c7
+Content-Type: application/json
+
+{
+  "status": "approved",
+  "eventCost": "USD $250"
+}
+
+### Delete a event by id
+DELETE  http://localhost:3000/events/5df118b3c86e5826958b661a
+
+### 404 route Not Found
+GET http://localhost:3000/abc_xyz
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hrXWgw4Q127uqZJ3
