@@ -6,9 +6,7 @@ const Event = require('../Models/Event.model');
 module.exports = {
   getAllEvents: async (req, res, next) => {
     try {
-      //const results = await Event.find({}, { __v: 0 });
-      // const results = await Product.find({}, { name: 1, price: 1, _id: 0 });
-      const results = await Event.find(req.query);
+        const results = await Event.find(req.query);
       res.send(results);
     } catch (error) {
       console.log(error.message);
